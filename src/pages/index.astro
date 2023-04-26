@@ -1,15 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Count from "../components/Count.vue"
 ---
 
 <Layout title="Welcome to Astro.">
   <main>    
     <p>My astro site</p>
+    <Count client:load/>
   </main>
-
-  <script>
-    document.querySelector('.hamburger').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('expanded');
-    });
-  </script>
 </Layout>
