@@ -1,10 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import '../styles/global.css'
 
 const pageTitle = "A propos de moi";
-
 
 const identity = {
   firstName: "Sarah",
@@ -24,11 +21,8 @@ const skillColor = "navy";
 
 <Layout title={pageTitle}>
   <main>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">blog</a>
 
-    <h1>About Me</h1>
+    <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
 
     <p>
