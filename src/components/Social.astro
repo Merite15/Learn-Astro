@@ -1,4 +1,10 @@
 ---
+export interface Props {
+	platform: string;
+	username: string;
+	icon?: string;
+}
+
 const { platform, username, icon } = Astro.props;
 ---
 
